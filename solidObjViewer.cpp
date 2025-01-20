@@ -1,4 +1,3 @@
-// This file is based on a file supplied by Prof. Marshall Long for ENAS 130.
 
 #include <QApplication>
 #include "classVertex.h"

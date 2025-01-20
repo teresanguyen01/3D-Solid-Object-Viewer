@@ -11,22 +11,7 @@ using namespace std;
 
 #define MAXVERTSINPOLY 10
 #define GRAPHICSWINDOWPIXELS 500
-// When you call plotOn, use GRAPHICSWINDOWPIXELS twice in its argument list.
 
-//==============================================================================
-// Class declaration for the Solid class
-//==============================================================================
-
-// The declaration is in structPoly_classSolid.h.  It's been #included in Line 3
-// above!
-
-//==============================================================================
-// Class implementation for the Solid class
-//==============================================================================
-
-// This function is the constructor.  It sets each member variable to zero or
-// to nullptr (except cop, which is a Vertex object).
-// [DON'T CHANGE THIS FUNCTION, which has been written for you.]
 Solid::Solid()
 {
     nVertsInObj = 0;
@@ -39,10 +24,7 @@ Solid::Solid()
 
 //------------------------------------------------------------------------------
 
-// This function is the destructor.  It's called automatically when the object
-// goes out of scope.  It deallocates memory associated with vertArray and
-// polyArray.
-// [DON'T CHANGE THIS FUNCTION, which has been written for you.]
+
 Solid::~Solid()
 {
     if (vertArray != nullptr)
@@ -59,10 +41,7 @@ Solid::~Solid()
 
 //------------------------------------------------------------------------------
 
-// This function reads in the geometric description of the solid object (i.e.,
-// vertex list and polygon list) from the specified file, as well as the color
-// of each polygon.  It also calculates the centroid of each polygon.  Finally,
-// it determines maxDistFromOrigin, z0, and the COP.
+
 void Solid::readInFromFile(char* filename)
 {
     // Declarations
@@ -181,9 +160,7 @@ void Solid::readInFromFile(char* filename)
 
 //------------------------------------------------------------------------------
 
-// This function projects the vertices and plots the result.  The first time
-// the function is called, it opens the graphics window.  Subsequent calls must
-// NOT re-open the window, because it's already open.
+
 void Solid::projectAndPlot()
 {
     // Declarations and initializations
